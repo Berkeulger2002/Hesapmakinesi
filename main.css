@@ -4,6 +4,8 @@
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    padding-top: 40px; 
+    padding-bottom: 40px;
 }
 
 .calculator {
@@ -11,6 +13,7 @@
     background-color: #d3e2e6;
     padding: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 .tabl {
     border-radius: 50px;
@@ -53,7 +56,7 @@
     padding: 20px;
     margin: 5px;
     border: none;
-    border-radius: 50px; /* Yumuşak kenarlı kare */
+    border-radius: 50px; 
     background-color: #a5d1e6;
     color: white;
     font-size: 20px;
@@ -67,88 +70,106 @@ background-color: #d6dde4;
 }
 
 .button {
-    width: 100%; /* Tuşların genişliği eşit olacak şekilde ayarlanır */
-    height: 100%; /* Tuşların yüksekliği eşit olacak şekilde ayarlanır */
+    width: 100%; 
+    height: 100%; 
     border: none;
     background-color: aqua;
     cursor: pointer;
     font-size: 20px;
 }
 .square {
-    width: 300px; /* Dikdörtgen genişliği */
-    height: 50px; /* Dikdörtgen yüksekliği */
+    width: 300px; 
+    height: 50px; 
     border-radius: 50px;
-    border: 2px solid #a5d1e6; /* Dikdörtgenin kenar rengi ve kalınlığı */
+    border: 2px solid #a5d1e6; 
     background-color: #a5d1e6;
-    text-align: center; /*/* Tablonun 3 eşit parçasına bölecek şekilde genişlik ayarı */
-    padding: 5px; /* Hücre içindeki içeriği kenarlardan uzaklaştırma */
+    text-align: center; 
+    padding: 5px; 
 }
 .square button {
     float: left;
-    width: 30%;  /* Her butonun genişliğini ayarlayın, 2px boşluk bırakarak */
-    /* Butonlar arasında boşluk bırakın */
+    width: 30%;  
 }
 .row {
-    width: 50px; /* Dikdörtgen genişliği */
-    height: 300px; /* Dikdörtgen yüksekliği */
+    width: 50px; 
+    height: 300px; 
     border-radius: 50px;
-    border: 2px solid #a5d1e6; /* Dikdörtgenin kenar rengi ve kalınlığı */
+    border: 2px solid #a5d1e6; 
     background-color: #a5d1e6;
-    text-align: right; /*/* Tablonun 3 eşit parçasına bölecek şekilde genişlik ayarı */
-    padding: 5px; /* Hücre içindeki içeriği kenarlardan uzaklaştırma */
+    text-align: right;
+    padding: 5px; 
 }
 .dark {
-    width: 50px;
-    height: 50px;
+    top: -350px;
+    left: 150px;
+    width: 60px;
+    height: 60px;
     background-color: #EB6666;
     border-radius: 50%;
-    position: relative; /* Resmi butonun içinde konumlandırmak için */
-    overflow: hidden; /* Resmin buton sınırları içinde kalmasını sağlar */
-    display: inline-flex; /* Butonu ve resmi yatay olarak hizalar */
-    align-items: center; /* Resmi düşey olarak ortalar */
-    justify-content: center; /* Resmi yatay olarak ortalar */
+    position: relative; 
+    overflow: hidden; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
 }
-
 .dark img {
-    max-width: 100px; /* Resmi buton içinde tam genişlikte yapar */
-    max-height: 100px; /* Resmi buton içinde tam yükseklikte yapar */
-    object-fit: cover; /* Resmi buton boyutlarına sığacak şekilde orantılar */
+    max-width: 100px; 
+    max-height: 100px;
+    object-fit: cover; 
+}
+.back {
+    top: -350px;
+    left: 190px;
+    width: 60px;
+    height: 60px;
+    background-color: #f7f0f0;
+    border-radius: 50%;
+    position: relative; 
+    overflow: hidden; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.back img {
+    max-width: 80px; 
+    max-height: 80px; 
+    object-fit: cover; 
 }
 .body {
-    transition: background-color 0.5s ease; /* Geçiş efektini etkinleştir */
+    transition: background-color 0.5s ease; 
 }
 .dark-theme .container {
-    background-color: #111; /* Koyu arka plan rengi */
+    background-color: #111; 
 }
 
 .dark-theme .calculator {
-    background-color: #222; /* Koyu arka plan rengi */
+    background-color: #222;
 }
 
 .dark-theme .tabl {
-    background-color: #333; /* Koyu arka plan rengi */
+    background-color: #333; 
 }
 
 .dark-theme .display {
-    color: #fff; /* Beyaz metin rengi */
+    color: #fff; 
 }
 
 .dark-theme .calculator button {
-    background-color: #444; /* Koyu arka plan rengi */
-    color: #fff; /* Beyaz metin rengi */
+    background-color: #444; 
+    color: #fff; 
 }
 
 .dark-theme .calculator button:hover {
-    background-color: #666; /* Koyu arka plan rengi */
+    background-color: #666;
 }
 
 .dark-theme .square {
-    background-color: #444; /* Koyu arka plan rengi */
+    background-color: #444;
     border: #444;
 }
 
 
 .dark-theme .row {
-    background-color: #444; /* Koyu arka plan rengi */
+    background-color: #444; 
     border: #444;
 }
