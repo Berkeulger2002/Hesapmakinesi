@@ -99,27 +99,45 @@ background-color: #d6dde4;
     text-align: right;
     padding: 5px; 
 }
-.dark {
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Butonun görünümünü değiştiren stil */
+#darkModeToggle {
+    position: relative;
     top: -350px;
     left: 150px;
     width: 60px;
     height: 60px;
-    background-color: #EB6666;
-    border-radius: 50%;
-    position: relative; 
-    overflow: hidden; 
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center;
+    background-color: aqua;
+    border-radius: 10px; 
+    overflow: hidden;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
-.dark img {
-    max-width: 100px; 
-    max-height: 100px;
+.dark-theme #darkModeToggle {
+    background-color: black; 
+}
+
+#d {
+    margin-right: 10px; 
+}
+
+.back {
+    background-color: #f7f0f0;
+}
+.back img {
+    max-width: 80px; 
+    max-height: 80px; 
     object-fit: cover; 
 }
+
 .back {
     top: -350px;
-    left: 190px;
+    left: 250px;
     width: 60px;
     height: 60px;
     background-color: #f7f0f0;

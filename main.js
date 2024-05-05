@@ -1,6 +1,17 @@
-darkModeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark-theme');
+var darkModeToggle = document.getElementById("darkModeToggle");
+var isToggled = false;
+
+darkModeToggle.addEventListener("click", function() {
+    if (!isToggled) {
+        darkModeToggle.style.transform = "translateX(50px)"; 
+        document.documentElement.classList.add("dark-theme"); 
+    } else {
+        darkModeToggle.style.transform = "translateX(0)"; 
+        document.documentElement.classList.remove("dark-theme"); 
+    }
+    isToggled = !isToggled; 
 });
+
 const dButton = document.getElementById('d');
 
 dButton.addEventListener('click', () => {
